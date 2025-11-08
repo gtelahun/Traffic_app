@@ -204,7 +204,7 @@ with tabs[0]:
     st.write("### Feature Importance")
     fig_file = "feature_importance.svg"
     if file_exists(fig_file):
-        st.image(p("traffic_image.gif"))
+        st.image(p(fig_file))
     else:
         st.caption("Feature importance plot not found. Re-run the notebook to generate it.")
 
