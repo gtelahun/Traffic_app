@@ -67,7 +67,7 @@ st.markdown(
     "<p style='text-align:center;'>Utilize our advanced Machine Learning application to predict traffic volume.</p>",
     unsafe_allow_html=True,
 )
-st.image(p("traffic_image.gif"), use_container_width=True)
+st.image(p("traffic_image.gif"))
 
 # Alpha slider (significance level)
 alpha = st.slider(
@@ -204,7 +204,7 @@ with tabs[0]:
     st.write("### Feature Importance")
     fig_file = "feature_importance.svg"
     if file_exists(fig_file):
-        st.image(p(fig_file))
+        st.image(p("traffic_image.gif"))
     else:
         st.caption("Feature importance plot not found. Re-run the notebook to generate it.")
 
